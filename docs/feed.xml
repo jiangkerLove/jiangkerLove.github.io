@@ -1,0 +1,302 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/</id>
+  <title>Jiangker</title>
+  <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
+  <updated>2024-04-03T17:21:21+08:00</updated>
+  <author>
+    <name>jiangker</name>
+    <uri>/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
+  <rights> © 2024 jiangker </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Docker安装Minio</title>
+    <link href="/posts/docker_minio/" rel="alternate" type="text/html" title="Docker安装Minio" />
+    <published>2024-04-02T11:25:00+08:00</published>
+  
+    <updated>2024-04-02T11:33:25+08:00</updated>
+  
+    <id>/posts/docker_minio/</id>
+    <content src="/posts/docker_minio/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Other" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      创建目录文件
+
+mkdir -p /home/docker/minio/data/
+
+
+运行容器
+
+docker run -p 9000:9000 -p 9001:9001 --name minio \
+-v /home/docker/minio/data:/data \
+-e MINIO_ROOT_USER=minioadmin \
+-e MINIO_ROOT_PASSWORD=minioadmin \
+-d minio/minio server /data --console-address ":9001"
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Docker安装MongoDB</title>
+    <link href="/posts/docker_mongodb/" rel="alternate" type="text/html" title="Docker安装MongoDB" />
+    <published>2024-04-02T10:20:00+08:00</published>
+  
+    <updated>2024-04-02T11:11:41+08:00</updated>
+  
+    <id>/posts/docker_mongodb/</id>
+    <content src="/posts/docker_mongodb/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Other" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      创建目录文件
+
+mkdir -p /home/docker/mongodb/conf/
+mkdir -p /home/docker/mongodb/data/
+mkdir -p /home/docker/mongodb/logs/
+
+
+增加配置文件
+
+cd /home/docker/mongodb/conf &amp;amp;&amp;amp; vim mongod.conf
+
+
+增加内容
+
+# 数据库文件存储位置
+dbpath = /data/db
+# log文件存储位置
+logpath = /data/log/mongod.log
+# 使用追加的方式写日志
+logappend = true
+# 是否以守护进程方式运行
+# fork = true
+# 全部ip可以访问
+bind_ip = 0.0.0.0
+# 端口号
+port = 27017
+# 是否启用认证
+auth = true
+# 设置opl...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Docker安装ActiveMQ</title>
+    <link href="/posts/docker_activemq/" rel="alternate" type="text/html" title="Docker安装ActiveMQ" />
+    <published>2024-03-12T10:56:00+08:00</published>
+  
+    <updated>2024-03-12T10:56:00+08:00</updated>
+  
+    <id>/posts/docker_activemq/</id>
+    <content src="/posts/docker_activemq/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Other" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      docker 安装
+
+docker run -d --name activemq -p 61616:61616 -p 8161:8161 webcenter/activemq:latest
+
+
+61616端口用于程序调用，8161用于web访问，默认账户密码为admin/admin
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Clean Code</title>
+    <link href="/posts/clean_code/" rel="alternate" type="text/html" title="Clean Code" />
+    <published>2023-12-06T08:50:00+08:00</published>
+  
+    <updated>2023-12-06T08:50:00+08:00</updated>
+  
+    <id>/posts/clean_code/</id>
+    <content src="/posts/clean_code/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Other" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      2 有意义的命名
+
+2.9 类名
+
+类名和对象名应该是名词或名词短语，而不应该为动词。
+
+2.10 方法名
+
+方法名应该是动词或动词短语。属性访问器、修改器和断言应该根据其值命名，并根据Javabean标准加上get、set、is前缀
+
+3 函数
+
+3.1 短小
+
+函数应该短小，每个函数才能一目了然，每个函数只做一件事情，每个函数都是依次把你带到下一个函数。
+
+3.2 只做一件事
+
+函数应该做一件事，做好这件事。编写函数毕竟事为了把大的一些概念拆分为另一抽象层面上的一系列步骤。
+
+3.3 每个函数都在一个抽象层级上面
+
+3.6 函数参数
+
+减少函数的参数，多作为成员变量或者方法
+
+4 注释
+
+尽量使用名称去传达信息而非注释，变更代码时需要及时维护注释，否则注释反倒可能起到误导作用。注释可以用来警示其他程序员会出现某种后果的注释也是有用的。言简意赅的表达出想要的意思，别使用很废话的注释...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>shell脚本</title>
+    <link href="/posts/shell/" rel="alternate" type="text/html" title="shell脚本" />
+    <published>2023-12-06T08:48:00+08:00</published>
+  
+    <updated>2023-12-06T08:48:00+08:00</updated>
+  
+    <id>/posts/shell/</id>
+    <content src="/posts/shell/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Other" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      第一个Shell脚本
+
+shell脚本以时候结尾，所以创建test.sh文件
+
+#!/bin/bash
+echo "Hello World !"
+
+
+#! 是一个约定的标记，它告诉系统这个脚本需要什么解释器来执行，即使用哪一种 Shell。
+
+运行脚本
+
+chmod +x ./test.sh  #使脚本具有执行权限
+./test.sh  #执行脚本
+
+
+变量
+
+
+  
+    命名
+
+    # 命名只能使用英文字母，数字和下划线，首个字符不能以数字开头。
+# 等号左右不能有空格
+your_name="jiangker.icu"
+  
+# 使用别的语句给变量赋值
+# 循环出目录下文件名称
+for file in `ls /etc`
+或
+for file in $(ls /etc)
+  
+# 重新命名变量时不需要使用$符号，使用值时才需要加
+your_name="jiang"
+echo...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
