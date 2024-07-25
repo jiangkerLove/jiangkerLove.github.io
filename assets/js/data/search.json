@@ -462,7 +462,7 @@
 
 
 
-    "snippet": "zsh 安装# 更新sudo apt-get update# 安装zshsudo apt-get install zsh# 设置默认是呀zshchsh -s $(which zsh)# 下载安装wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh# 若失败可以使用 sh -c \"$(wget -O- https://gitee.com/shmhlsy/oh-my-zsh-install.sh/raw/master/install.sh)\"参考  linux安装oh-my-zsh  [Ubuntu] 关于ohmyzsh下载被443拒绝连接"
+    "snippet": "zsh 安装更新sudo apt-get update安装zshsudo apt-get install zsh设置默认是呀zshchsh -s $(which zsh)下载安装wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh若失败可以使用sh -c \"$(wget -O- https://gitee.com/shmhlsy/oh-my-zsh-install.sh/raw/master/install.sh)\"参考  linux安装oh-my-zsh  [Ubuntu] 关于ohmyzsh下载被443拒绝连接"
   },
   
   {

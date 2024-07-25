@@ -42,7 +42,7 @@
 <meta name="twitter:site" content="@twitter_username">
 <meta name="twitter:creator" content="@jiangker">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jiangker"},"dateModified":"2023-10-20T23:00:00+08:00","datePublished":"2023-10-20T23:00:00+08:00","description":"使用serde解析json","headline":"使用serde解析json","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/posts/serde_json/"},"url":"http://0.0.0.0:4000/posts/serde_json/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jiangker"},"dateModified":"2024-07-25T17:31:53+08:00","datePublished":"2023-10-20T23:00:00+08:00","description":"使用serde解析json","headline":"使用serde解析json","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/posts/serde_json/"},"url":"http://0.0.0.0:4000/posts/serde_json/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -654,6 +654,23 @@
 
     <!-- lastmod date -->
     
+    <span>
+      Updated
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1721899913" data-df="ll" data-toggle="tooltip" data-placement="bottom">
+  Jul 25, 2024
+</em>
+
+    </span>
+    
 
   
 
@@ -717,9 +734,9 @@
 
 <p>在Cargo.toml文件中添加以下行：</p>
 
-<div class="language-plaintext highlighter-rouge">
+<div class="language-toml highlighter-rouge">
 <div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span>
+        <span data-label-text="TOML"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button>
 </div>
 <div class="highlight"><code><table class="rouge-table"><tbody><tr>
@@ -727,9 +744,9 @@
 2
 3
 </pre></td>
-<td class="rouge-code"><pre>[dependencies]
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
+<td class="rouge-code"><pre><span class="nn">[dependencies]</span>
+<span class="nn">serde</span> <span class="o">=</span> <span class="p">{</span> <span class="py">version</span> <span class="p">=</span> <span class="s">"1.0"</span><span class="p">,</span> <span class="py">features</span> <span class="p">=</span> <span class="nn">["derive"]</span> <span class="p">}</span>
+<span class="py">serde_json</span> <span class="p">=</span> <span class="s">"1.0"</span>
 </pre></td>
 </tr></tbody></table></code></div>
 </div>
@@ -876,7 +893,7 @@ serde_json = "1.0"
 
 <p>输出</p>
 
-<div class="language-shell highlighter-rouge">
+<div class="language-bash highlighter-rouge">
 <div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button>
@@ -946,7 +963,7 @@ name: <span class="s2">"jiangker"</span>
 
 <p>输出</p>
 
-<div class="language-shell highlighter-rouge">
+<div class="language-bash highlighter-rouge">
 <div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button>
@@ -1000,7 +1017,7 @@ skill: <span class="o">[</span><span class="s2">"Java"</span>, <span class="s2">
 
 <p>输出</p>
 
-<div class="language-shell highlighter-rouge">
+<div class="language-bash highlighter-rouge">
 <div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button>
@@ -1131,6 +1148,16 @@ name: <span class="s2">"jiangker"</span>
         
         
         
+      <li><a href="/posts/serde_json/">使用serde解析json</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/zsh/">Ubuntu安装zsh</a></li>
+      
+        
+        
+        
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
       
         
@@ -1142,16 +1169,6 @@ name: <span class="s2">"jiangker"</span>
         
         
       <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/docker_mysql/">Docker部署MySQL</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/docker_yolov5/">Docker部署yolov5服务</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->

@@ -42,7 +42,7 @@
 <meta name="twitter:site" content="@twitter_username">
 <meta name="twitter:creator" content="@jiangker">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jiangker"},"dateModified":"2023-10-27T14:49:00+08:00","datePublished":"2023-10-27T14:49:00+08:00","description":"zsh 安装","headline":"Ubuntu安装zsh","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/posts/zsh/"},"url":"http://0.0.0.0:4000/posts/zsh/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"jiangker"},"dateModified":"2024-07-25T17:14:12+08:00","datePublished":"2023-10-27T14:49:00+08:00","description":"zsh 安装","headline":"Ubuntu安装zsh","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/posts/zsh/"},"url":"http://0.0.0.0:4000/posts/zsh/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -533,6 +533,66 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -583,6 +643,23 @@
 
     <!-- lastmod date -->
     
+    <span>
+      Updated
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1721898852" data-df="ll" data-toggle="tooltip" data-placement="bottom">
+  Jul 25, 2024
+</em>
+
+    </span>
+    
 
   
 
@@ -626,7 +703,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="80 words">
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="71 words">
   <em>1 min</em> read</span>
 
     </div>
@@ -640,6 +717,10 @@
 <span class="mr-2">zsh 安装</span><a href="#zsh-%E5%AE%89%E8%A3%85" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
 </h3>
 
+<h4 id="更新">
+<span class="mr-2">更新</span><a href="#%E6%9B%B4%E6%96%B0" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h4>
+
 <div class="language-bash highlighter-rouge">
 <div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
@@ -647,24 +728,75 @@
 </div>
 <div class="highlight"><code><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
 </pre></td>
-<td class="rouge-code"><pre><span class="c"># 更新</span>
-<span class="nb">sudo </span>apt-get update
-<span class="c"># 安装zsh</span>
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>zsh
-<span class="c"># 设置默认是呀zsh</span>
-chsh <span class="nt">-s</span> <span class="si">$(</span>which zsh<span class="si">)</span>
-<span class="c"># 下载安装</span>
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh <span class="nt">-O</span> - | sh
-<span class="c"># 若失败可以使用 sh -c "$(wget -O- https://gitee.com/shmhlsy/oh-my-zsh-install.sh/raw/master/install.sh)"</span>
+<td class="rouge-code"><pre><span class="nb">sudo </span>apt-get update
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
+
+<h4 id="安装zsh">
+<span class="mr-2">安装zsh</span><a href="#%E5%AE%89%E8%A3%85zsh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h4>
+
+<div class="language-bash highlighter-rouge">
+<div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre><span class="nb">sudo </span>apt-get <span class="nb">install </span>zsh
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
+
+<h4 id="设置默认是呀zsh">
+<span class="mr-2">设置默认是呀zsh</span><a href="#%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E6%98%AF%E5%91%80zsh" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h4>
+
+<div class="language-bash highlighter-rouge">
+<div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>chsh <span class="nt">-s</span> <span class="si">$(</span>which zsh<span class="si">)</span>
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
+
+<h4 id="下载安装">
+<span class="mr-2">下载安装</span><a href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h4>
+
+<div class="language-bash highlighter-rouge">
+<div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh <span class="nt">-O</span> - | sh
+</pre></td>
+</tr></tbody></table></code></div>
+</div>
+
+<h4 id="若失败可以使用">
+<span class="mr-2">若失败可以使用</span><a href="#%E8%8B%A5%E5%A4%B1%E8%B4%A5%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h4>
+<div class="language-bash highlighter-rouge">
+<div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button>
+</div>
+<div class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td>
+<td class="rouge-code"><pre>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>wget <span class="nt">-O-</span> https://gitee.com/shmhlsy/oh-my-zsh-install.sh/raw/master/install.sh<span class="si">)</span><span class="s2">"</span>
 </pre></td>
 </tr></tbody></table></code></div>
 </div>
@@ -794,6 +926,16 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh <span
         
         
         
+      <li><a href="/posts/serde_json/">使用serde解析json</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/zsh/">Ubuntu安装zsh</a></li>
+      
+        
+        
+        
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
       
         
@@ -805,16 +947,6 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh <span
         
         
       <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/docker_mysql/">Docker部署MySQL</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/docker_yolov5/">Docker部署yolov5服务</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
