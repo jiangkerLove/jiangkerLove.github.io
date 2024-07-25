@@ -1,0 +1,296 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://0.0.0.0:4000/</id>
+  <title>Jiangker</title>
+  <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
+  <updated>2024-07-25T13:24:09+08:00</updated>
+  <author>
+    <name>jiangker</name>
+    <uri>http://0.0.0.0:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://0.0.0.0:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator>
+  <rights> © 2024 jiangker </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>rustlings 学习和答案</title>
+    <link href="http://0.0.0.0:4000/posts/rustlings/" rel="alternate" type="text/html" title="rustlings 学习和答案" />
+    <published>2024-07-08T16:26:00+08:00</published>
+  
+    <updated>2024-07-25T12:34:23+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/rustlings/</id>
+    <content src="http://0.0.0.0:4000/posts/rustlings/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Rust" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      前言
+
+
+  去年年中对rust进行了一个大概的学习，然后完成了rustlings的笔记，最后改写了我的两个简单的java项目。今年回首，又感觉比较陌生了，所以准备在此记录一下rustlings的题解和一些笔记。
+
+
+相关资料
+
+
+  Rust The Book
+  Rust By Example
+  rustlings
+  Rust Course
+  jiangkerLove/rustlings
+
+
+Intro
+
+
+  Rust uses the print! and println! macros to print text to the console.
+
+
+intro2.ts
+
+打印写错了，改为
+
+println!("Hello world!");
+
+
+print
+
+rust的打印是不换行的print!()以及换行的println!()，这两个都是宏函数
+
+Further i...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Ubuntu安装Anaconda3创建python环境</title>
+    <link href="http://0.0.0.0:4000/posts/anaconda3/" rel="alternate" type="text/html" title="Ubuntu安装Anaconda3创建python环境" />
+    <published>2024-05-20T12:42:00+08:00</published>
+  
+    <updated>2024-05-20T12:42:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/anaconda3/</id>
+    <content src="http://0.0.0.0:4000/posts/anaconda3/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Ubuntu" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      下载Anaconda3
+
+这里使用的ubuntu版本为20.04，python版本对应的是3.10，根据release-notes可以看出，最新版也是支持3.10的，所以直接下载最新版官网下载或者清华源，我这里直接命令行下载最新版
+
+wget https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh
+
+
+因为需要安装在非root用户下，所以给他增加执行权限
+
+chmod 777 Anaconda3-2024.02-1-Linux-x86_64.sh
+
+
+运行安装，需要注意，这里协议查看是，直接按空格也是可以跳过的，不一定是回车，回车可能导致点多了退出
+
+./Anaconda3-2024.02-1-Linux-x86_64.sh
+
+
+最后输入yes，然后等待下载和安装
+
+初始化
+
+前面的安装，anacon...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Ubuntu开启SSH访问</title>
+    <link href="http://0.0.0.0:4000/posts/openssh/" rel="alternate" type="text/html" title="Ubuntu开启SSH访问" />
+    <published>2024-05-11T11:39:00+08:00</published>
+  
+    <updated>2024-05-11T11:39:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/openssh/</id>
+    <content src="http://0.0.0.0:4000/posts/openssh/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Ubuntu" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      安装SSH服务器
+
+sudo apt update
+sudo apt install -y openssh-server
+
+
+启动SSH服务
+
+sudo systemctl start ssh
+
+
+确认SSH服务状态
+sudo systemctl status ssh
+
+
+（可选）设置防火墙
+sudo ufw allow ssh
+
+
+设置SSH服务为开机启动
+sudo systemctl enable ssh
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Docker部署yolov5服务</title>
+    <link href="http://0.0.0.0:4000/posts/docker_yolov5/" rel="alternate" type="text/html" title="Docker部署yolov5服务" />
+    <published>2024-04-23T15:31:00+08:00</published>
+  
+    <updated>2024-04-24T09:35:03+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/docker_yolov5/</id>
+    <content src="http://0.0.0.0:4000/posts/docker_yolov5/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Other" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      简介
+
+yolov5是由python实现的，所以这里简单直接的去部署一个python的server来直接使用yolov5，用的是最新master分支，服务器为ubuntu20.04。
+
+运行容器
+
+首先需要下载代码在服务端路径下，运行容器时进行关联，然后在容器中进行使用，这里容器直接使用最基础的环境，然后进行配置即可。
+
+sudo docker run --name yolov5 -p 8888:8888 -e TZ=Asia/Shanghai -v /home/docker/yolov5:/counting -d ubuntu:20.04 /bin/bash
+
+
+进入容器内部进行配置
+
+sudo docker exec -it yolov5 /bin/bash
+
+
+下载python3和pip
+
+apt-get update &amp;amp;&amp;amp; apt-get install -y...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Docker安装Zookeeper</title>
+    <link href="http://0.0.0.0:4000/posts/docker_zookeeper/" rel="alternate" type="text/html" title="Docker安装Zookeeper" />
+    <published>2024-04-22T17:28:00+08:00</published>
+  
+    <updated>2024-04-22T17:28:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/docker_zookeeper/</id>
+    <content src="http://0.0.0.0:4000/posts/docker_zookeeper/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Other" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      创建目录文件
+
+mkdir zookeeper &amp;amp;&amp;amp; cd zookeeper
+
+
+运行容器
+
+docker run -d -e TZ="Asia/Shanghai" -p 2181:2181 -v $PWD/data:/data --name zookeeper --restart always zookeeper
+
+
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
