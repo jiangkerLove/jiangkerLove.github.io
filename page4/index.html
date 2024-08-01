@@ -438,6 +438,139 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/java-version/">ubuntu java多版本切换</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        java安装
+
+在默认情况下，应该是不带有jdk的，这个时候，我们可以使用apt来下载
+
+apt-get install openjdk-8-jdk openjdk-11-jdk -y
+
+
+当下载多个版本后，默认的java应该就是后下载的那个的版本。
+
+使用update-alternatives切换版本
+
+在/usr/bin目录下
+
+➜  bin ls -al| grep java
+lrwx...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1698395640" data-df="ll">
+  Oct 27, 2023
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Ubuntu
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/python_version/">ubuntu python多版本切换</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        安装
+
+apt-get install python python3 -y
+
+
+默认情况，默认的python是指向python2的，在/usr/bin目录下
+
+➜  bin ls -al| grep python
+lrwxrwxrwx  1 root root           7 4月  15  2020 python -&amp;gt; python2
+lrwxrwxrwx  1 root r...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1698392040" data-df="ll">
+  Oct 27, 2023
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Ubuntu
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/zsh/">Ubuntu安装zsh</a>
     </h1>
 
@@ -980,127 +1113,6 @@ use serde::{Serialize, Deserialize};
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/inherited-widget/">InheritedWidget Share Data</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        If we had get the official demo app, the data saved in _MyHomePageState, used buy his child Widget and operated by other child button. We can split this Widget, create a ShowText to show the count ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1694660400" data-df="ll">
-  Sep 14, 2023
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            flutter
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/jenkins/">unraid jenkins安装和配置</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Jenkins安装
-
-一般情况Jenkins的安装都是使用docker-compose，在文件中把环境配置都创建好，但是unraid中不能使用compose，所以为了保持一致性，需要自己手动配置相关环境。
-注意此处映射的路径需要是有所有权限的，可以通过设置
-
-chmod 777 Jenkins
-
-
-运行镜像相关的配置，默认直接在app市场搜索，然后就行一点小修改即可。
-
-docker run...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1693275000" data-df="ll">
-  Aug 29, 2023
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Unraid,
-            Jenkins
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
 </div> <!-- #post-list -->
 
 
@@ -1316,9 +1328,24 @@ docker run...
     
 
     
+      <!-- hide number -->
+      
+    
+
+  
+
+    
+    
+    
+    
+    
+
+    
+
+    
       <!-- show number -->
       <li class="page-item ">
-        <a class="page-link btn-box-shadow" href="/page12">12</a>
+        <a class="page-link btn-box-shadow" href="/page13">13</a>
       </li>
     
 
@@ -1327,7 +1354,7 @@ docker run...
   <!-- mobile pagination -->
   <li class="page-index align-middle">
     <span>4</span>
-    <span class="text-muted">/ 12</span>
+    <span class="text-muted">/ 13</span>
   </li>
 
   <!-- right arrow -->
@@ -1377,6 +1404,16 @@ docker run...
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -1388,16 +1425,6 @@ docker run...
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1923,6 +1950,16 @@ docker run...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3281,6 +3318,16 @@ docker run...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

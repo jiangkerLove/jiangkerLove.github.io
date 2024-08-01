@@ -834,6 +834,16 @@
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -845,16 +855,6 @@
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1380,6 +1380,16 @@
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3223,6 +3233,32 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -3845,7 +3881,7 @@ sudo...
       
       
       <div class="card">
-        <a href="/posts/docker_compose/">
+        <a href="/posts/docker_activemq/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -3856,11 +3892,11 @@ sudo...
 
 
 
-<em class="small" data-ts="1655285340" data-df="ll">
-  Jun 15, 2022
+<em class="small" data-ts="1710212160" data-df="ll">
+  Mar 12, 2024
 </em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Docker Compose安装及使用</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Docker安装ActiveMQ</h3>
             <div class="text-muted small">
               <p>
                 
@@ -3869,17 +3905,14 @@ sudo...
 
 
 
-                安装
+                docker 安装
 
-下载地址
+1
+docker run -d --name activemq -p 61616:61616 -p 8161:8161 webcenter/activemq:latest
 
-gitlab: docker/compose
 
-下载并安装运行
+61616端口用于程序调用，8161用于web访问，默认账户密码为admin/admin
 
-例如下载最新版本(v2.6.0, linux-x86)
-
-sudo curl -L "https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64" -o /usr/local/bin/docke...
               </p>
             </div>
           </div>
@@ -4483,6 +4516,16 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.6.0/docker-
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

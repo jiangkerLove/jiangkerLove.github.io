@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:4000/</id>
   <title>Jiangker</title>
   <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
-  <updated>2024-07-25T17:32:09+08:00</updated>
+  <updated>2024-08-01T15:10:10+08:00</updated>
   <author>
     <name>jiangker</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -20,11 +20,138 @@
 
   
   <entry>
+    <title>Android PDF的读取和写入</title>
+    <link href="http://0.0.0.0:4000/posts/pdf/" rel="alternate" type="text/html" title="Android PDF的读取和写入" />
+    <published>2024-08-01T14:08:00+08:00</published>
+  
+    <updated>2024-08-01T14:08:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/pdf/</id>
+    <content src="http://0.0.0.0:4000/posts/pdf/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="Android" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      官方组件
+
+主要依赖PdfRenderer来进行读取，读取到会转换位bitmap，就可以展示到页面中去。然后使用PdfDocument来进行写回，这里主要是canvas的绘制。
+
+简单制作一个绘制，然后将结果保存到文件的功能
+
+PDF读取
+
+val resources = this.resources
+val dm = resources.displayMetrics
+val screenWidth = dm.widthPixels
+
+val pdfFile = ParcelFileDescriptor.open(
+    File(filesDir.path + "/api.pdf"),
+    ParcelFileDescriptor.MODE_READ_ONLY
+)
+// pdf 总的高度
+var totalHeight = 0F
+// 存储pdf的页面bitmap
+val p...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>OpenCV 图像操作</title>
+    <link href="http://0.0.0.0:4000/posts/open_cv/" rel="alternate" type="text/html" title="OpenCV 图像操作" />
+    <published>2024-07-31T19:36:00+08:00</published>
+  
+    <updated>2024-07-31T15:25:18+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/open_cv/</id>
+    <content src="http://0.0.0.0:4000/posts/open_cv/" />
+    <author>
+      <name>jiangker</name>
+    </author>
+
+  
+    
+    <category term="opencv" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      OpenCv 基础函数
+
+读取图片
+
+img = cv.imread('img.png', 0)
+
+
+
+  0：灰度图模式加载
+  1：正常加载图片
+
+
+展示图片
+
+cv.imshow('image', img)
+cv.waitKey(0)
+cv.destroyAllWindows()
+
+
+
+
+waitKey(0) 表示等待按任意键继续执行，destroyAllWindows()销毁所有窗口
+
+裁剪
+
+img = cv.imread('img.png', 0)
+show = img[80:350, 170:400]
+cv.imshow('image', show)
+cv.waitKey(0)
+cv.destroyAllWindows()
+
+
+
+
+img[80:350, 170:400]表示截取y轴80-350和x轴170-400范围内的图片区域
+
+打印图片
+
+正常打印
+
+img = ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>rustlings 学习和答案</title>
     <link href="http://0.0.0.0:4000/posts/rustlings/" rel="alternate" type="text/html" title="rustlings 学习和答案" />
     <published>2024-07-08T16:26:00+08:00</published>
   
-    <updated>2024-07-25T12:34:23+08:00</updated>
+    <updated>2024-07-25T18:00:44+08:00</updated>
   
     <id>http://0.0.0.0:4000/posts/rustlings/</id>
     <content src="http://0.0.0.0:4000/posts/rustlings/" />
@@ -189,101 +316,6 @@ sudo ufw allow ssh
 
 设置SSH服务为开机启动
 sudo systemctl enable ssh
-
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Docker部署yolov5服务</title>
-    <link href="http://0.0.0.0:4000/posts/docker_yolov5/" rel="alternate" type="text/html" title="Docker部署yolov5服务" />
-    <published>2024-04-23T15:31:00+08:00</published>
-  
-    <updated>2024-04-24T09:35:03+08:00</updated>
-  
-    <id>http://0.0.0.0:4000/posts/docker_yolov5/</id>
-    <content src="http://0.0.0.0:4000/posts/docker_yolov5/" />
-    <author>
-      <name>jiangker</name>
-    </author>
-
-  
-    
-    <category term="Other" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      简介
-
-yolov5是由python实现的，所以这里简单直接的去部署一个python的server来直接使用yolov5，用的是最新master分支，服务器为ubuntu20.04。
-
-运行容器
-
-首先需要下载代码在服务端路径下，运行容器时进行关联，然后在容器中进行使用，这里容器直接使用最基础的环境，然后进行配置即可。
-
-sudo docker run --name yolov5 -p 8888:8888 -e TZ=Asia/Shanghai -v /home/docker/yolov5:/counting -d ubuntu:20.04 /bin/bash
-
-
-进入容器内部进行配置
-
-sudo docker exec -it yolov5 /bin/bash
-
-
-下载python3和pip
-
-apt-get update &amp;amp;&amp;amp; apt-get install -y...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Docker安装Zookeeper</title>
-    <link href="http://0.0.0.0:4000/posts/docker_zookeeper/" rel="alternate" type="text/html" title="Docker安装Zookeeper" />
-    <published>2024-04-22T17:28:00+08:00</published>
-  
-    <updated>2024-04-22T17:28:00+08:00</updated>
-  
-    <id>http://0.0.0.0:4000/posts/docker_zookeeper/</id>
-    <content src="http://0.0.0.0:4000/posts/docker_zookeeper/" />
-    <author>
-      <name>jiangker</name>
-    </author>
-
-  
-    
-    <category term="Other" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      创建目录文件
-
-mkdir zookeeper &amp;amp;&amp;amp; cd zookeeper
-
-
-运行容器
-
-docker run -d -e TZ="Asia/Shanghai" -p 2181:2181 -v $PWD/data:/data --name zookeeper --restart always zookeeper
 
 
     </summary>

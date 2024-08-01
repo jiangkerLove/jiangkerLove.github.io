@@ -36,6 +36,7 @@
 <meta property="og:site_name" content="Jiangker">
 <meta property="og:type" content="website">
 <link rel="prev" href="http://0.0.0.0:4000/page11">
+<link rel="next" href="http://0.0.0.0:4000/page13">
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Jiangker">
 <meta name="twitter:site" content="@twitter_username">
@@ -432,6 +433,167 @@
 
 
 <div id="post-list">
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/gitlab/">树莓派搭建GitLab</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        配置及安装
+
+
+  现在一般都使用docker安装了，所以基本上算是不实用了，docker安装更方便
+
+
+树莓派安装gitlab
+
+GitLab-ce
+
+更新依赖
+
+sudo apt-get update
+
+
+安装相关依赖；
+
+sudo apt-get install -y curl openssh-server ca-certificates
+
+
+也是安装相关依赖，这主要是用于GitLab...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1647595620" data-df="ll">
+  Mar 18, 2022
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            RaspberryPi
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/file-permision/">Ubuntu文件权限和归属</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        常见字符
+
+
+  
+    
+      字符
+      含义
+    
+  
+  
+    
+      -
+      普通文件
+    
+    
+      d
+      目录文件
+    
+    
+      l
+      链接文件
+    
+    
+      b
+      块设备文件
+    
+    
+      c
+      字符设备文件
+    
+    
+...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1647594600" data-df="ll">
+  Mar 18, 2022
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Ubuntu
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
 
 
 
@@ -999,79 +1161,6 @@ docker run -d  -p 443:443 -p 80:80 -p 222:22 --name gitlab --restart always -v /
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/docker-cmd/">docker基础命令</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        # 查看版本
-docker version
-# docker更详细的信息，images和容器数量等
-docker info
-# 帮助命令
-docker &amp;lt;cmd&amp;gt; --help
-
-
-docker refrence
-
-镜像相关命令
-
-# 本地所有镜像
-docker images -a
-# 所有镜像id
-docker images -aq
-# 查询镜像
-docker search &amp;...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1647574380" data-df="ll">
-  Mar 18, 2022
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Other,
-            Docker
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
 </div> <!-- #post-list -->
 
 
@@ -1246,10 +1335,8 @@ docker search &amp;...
     
 
     
-      <!-- show number -->
-      <li class="page-item ">
-        <a class="page-link btn-box-shadow" href="/page10">10</a>
-      </li>
+      <!-- hide number -->
+      
     
 
   
@@ -1288,17 +1375,34 @@ docker search &amp;...
 
   
 
+    
+    
+    
+    
+    
+
+    
+
+    
+      <!-- show number -->
+      <li class="page-item ">
+        <a class="page-link btn-box-shadow" href="/page13">13</a>
+      </li>
+    
+
+  
+
   <!-- mobile pagination -->
   <li class="page-index align-middle">
     <span>12</span>
-    <span class="text-muted">/ 12</span>
+    <span class="text-muted">/ 13</span>
   </li>
 
   <!-- right arrow -->
   
 
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="next-page">
+  <li class="page-item ">
+    <a class="page-link btn-box-shadow" href="/page13" aria-label="next-page">
       <i class="fas fa-angle-right"></i>
     </a>
   </li>
@@ -1341,6 +1445,16 @@ docker search &amp;...
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -1352,16 +1466,6 @@ docker search &amp;...
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1887,6 +1991,16 @@ docker search &amp;...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3245,6 +3359,16 @@ docker search &amp;...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

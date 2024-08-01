@@ -775,6 +775,16 @@
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -786,16 +796,6 @@
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1321,6 +1321,16 @@
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2153,6 +2163,32 @@
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -3712,7 +3748,7 @@
       
       
       <div class="card">
-        <a href="/posts/shell/">
+        <a href="/posts/docker_activemq/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -3723,11 +3759,11 @@
 
 
 
-<em class="small" data-ts="1701823680" data-df="ll">
-  Dec  6, 2023
+<em class="small" data-ts="1710212160" data-df="ll">
+  Mar 12, 2024
 </em>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>shell脚本</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Docker安装ActiveMQ</h3>
             <div class="text-muted small">
               <p>
                 
@@ -3736,29 +3772,13 @@
 
 
 
-                第一个Shell脚本
+                docker 安装
 
-shell脚本以时候结尾，所以创建test.sh文件
-
-#!/bin/bash
-echo "Hello World !"
+docker run -d --name activemq -p 61616:61616 -p 8161:8161 webcenter/activemq:latest
 
 
-#! 是一个约定的标记，它告诉系统这个脚本需要什么解释器来执行，即使用哪一种 Shell。
+61616端口用于程序调用，8161用于web访问，默认账户密码为admin/admin
 
-运行脚本
-
-chmod +x ./test.sh  #使脚本具有执行权限
-./test.sh  #执行脚本
-
-
-变量
-
-
-  
-    命名
-
-   ...
               </p>
             </div>
           </div>
@@ -4458,6 +4478,16 @@ vers...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

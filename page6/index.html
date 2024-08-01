@@ -438,6 +438,148 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/arouter/">ARouter使用和解析</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        依赖
+
+模块gradle中增加
+
+plugins {
+    id 'kotlin-kapt'
+}
+
+android {
+    defaultConfig {
+        kapt {
+            // 模块名
+            arguments {
+                arg("AROUTER_MODULE_NAME": project.getName...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1669014960" data-df="ll">
+  Nov 21, 2022
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Android
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/annotation/">Java注解介绍</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        元注解
+
+1、@Documented:
+
+用于标记在生成javadoc时是否将注解包含进去，可以看到这个注解和@Override一样，注解中空空如也，什么东西都没有。
+
+2、@Target
+
+用于定义注解可以在什么地方使用，默认可以在任何地方使用，也可以指定使用的范围，开发中将注解用。
+
+
+  
+    
+      字段
+      作用
+    
+  
+  
+    
+      Ele...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1668854460" data-df="ll">
+  Nov 19, 2022
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Java
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/retrofit/">Retrofit使用和解析</a>
     </h1>
 
@@ -947,139 +1089,6 @@ p...
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/linkedhashmap/">LinkedHashMap源码解析(JDK8)</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        简介
-
-LinkedHashMap继承至HashMap，对HashMap进行了增强。主要是HashMap是无序的，不能保持插入顺序，而LinkedHashMap对HashMap的Node节点进行了增强。支持了保持插入顺序或者按访问顺序排序。
-
-
-
-构造函数
-
-transient LinkedHashMapEntry&amp;lt;K,V&amp;gt; head;
-transient LinkedHashM...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1668591000" data-df="ll">
-  Nov 16, 2022
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Java
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/hashmap/">HashMap源码解析(JDK8)</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        简介
-
-Hashmap是key-value格式的键值对储存容器，key与value都支持null，但非线程安全，若需要线程安全可以使用ConcurrentHashMap。
-
-
-
-原理
-
-构造函数
-
-// 最大容量
-static final int MAXIMUM_CAPACITY = 1 &amp;lt;&amp;lt; 30;
-
-// 默认因子为0.75，即size达到最大容量的0.75时执行扩容
-sta...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1668580200" data-df="ll">
-  Nov 16, 2022
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Java
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
 </div> <!-- #post-list -->
 
 
@@ -1295,9 +1304,24 @@ sta...
     
 
     
+      <!-- hide number -->
+      
+    
+
+  
+
+    
+    
+    
+    
+    
+
+    
+
+    
       <!-- show number -->
       <li class="page-item ">
-        <a class="page-link btn-box-shadow" href="/page12">12</a>
+        <a class="page-link btn-box-shadow" href="/page13">13</a>
       </li>
     
 
@@ -1306,7 +1330,7 @@ sta...
   <!-- mobile pagination -->
   <li class="page-index align-middle">
     <span>6</span>
-    <span class="text-muted">/ 12</span>
+    <span class="text-muted">/ 13</span>
   </li>
 
   <!-- right arrow -->
@@ -1356,6 +1380,16 @@ sta...
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -1367,16 +1401,6 @@ sta...
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1902,6 +1926,16 @@ sta...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3260,6 +3294,16 @@ sta...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

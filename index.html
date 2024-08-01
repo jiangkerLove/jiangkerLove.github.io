@@ -437,6 +437,147 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/pdf/">Android PDF的读取和写入</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        官方组件
+
+主要依赖PdfRenderer来进行读取，读取到会转换位bitmap，就可以展示到页面中去。然后使用PdfDocument来进行写回，这里主要是canvas的绘制。
+
+简单制作一个绘制，然后将结果保存到文件的功能
+
+PDF读取
+
+val resources = this.resources
+val dm = resources.displayMetrics
+val screenW...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1722492480" data-df="ll">
+  Aug  1, 2024
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Android
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/open_cv/">OpenCV 图像操作</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        OpenCv 基础函数
+
+读取图片
+
+img = cv.imread('img.png', 0)
+
+
+
+  0：灰度图模式加载
+  1：正常加载图片
+
+
+展示图片
+
+cv.imshow('image', img)
+cv.waitKey(0)
+cv.destroyAllWindows()
+
+
+
+
+waitKey(0) 表示等待按任意键继续执行，destroyAllWindows()销毁所有窗口...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1722425760" data-df="ll">
+  Jul 31, 2024
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            opencv
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/rustlings/">rustlings 学习和答案</a>
     </h1>
 
@@ -962,156 +1103,6 @@ docker run -d --name activemq -p 61616:61616 -p 8161:8161 webcenter/activemq:lat
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/clean_code/">Clean Code</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        2 有意义的命名
-
-2.9 类名
-
-类名和对象名应该是名词或名词短语，而不应该为动词。
-
-2.10 方法名
-
-方法名应该是动词或动词短语。属性访问器、修改器和断言应该根据其值命名，并根据Javabean标准加上get、set、is前缀
-
-3 函数
-
-3.1 短小
-
-函数应该短小，每个函数才能一目了然，每个函数只做一件事情，每个函数都是依次把你带到下一个函数。
-
-3.2 只做一件事
-
-函数应该...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1701823800" data-df="ll">
-  Dec  6, 2023
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Other
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/shell/">shell脚本</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        第一个Shell脚本
-
-shell脚本以时候结尾，所以创建test.sh文件
-
-#!/bin/bash
-echo "Hello World !"
-
-
-#! 是一个约定的标记，它告诉系统这个脚本需要什么解释器来执行，即使用哪一种 Shell。
-
-运行脚本
-
-chmod +x ./test.sh  #使脚本具有执行权限
-./test.sh  #执行脚本
-
-
-变量
-
-
-  
-    命名
-
-   ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1701823680" data-df="ll">
-  Dec  6, 2023
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Other
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
 </div> <!-- #post-list -->
 
 
@@ -1320,9 +1311,24 @@ chmod +x ./test.sh  #使脚本具有执行权限
     
 
     
+      <!-- hide number -->
+      
+    
+
+  
+
+    
+    
+    
+    
+    
+
+    
+
+    
       <!-- show number -->
       <li class="page-item ">
-        <a class="page-link btn-box-shadow" href="/page12">12</a>
+        <a class="page-link btn-box-shadow" href="/page13">13</a>
       </li>
     
 
@@ -1331,7 +1337,7 @@ chmod +x ./test.sh  #使脚本具有执行权限
   <!-- mobile pagination -->
   <li class="page-index align-middle">
     <span>1</span>
-    <span class="text-muted">/ 12</span>
+    <span class="text-muted">/ 13</span>
   </li>
 
   <!-- right arrow -->
@@ -1381,6 +1387,16 @@ chmod +x ./test.sh  #使脚本具有执行权限
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -1392,16 +1408,6 @@ chmod +x ./test.sh  #使脚本具有执行权限
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1927,6 +1933,16 @@ chmod +x ./test.sh  #使脚本具有执行权限
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3285,6 +3301,16 @@ chmod +x ./test.sh  #使脚本具有执行权限
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

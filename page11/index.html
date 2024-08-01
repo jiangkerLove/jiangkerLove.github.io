@@ -438,6 +438,150 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/frp/">Frp-内网穿透</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        1. 下载安装程序
+
+
+  需区分不同平台
+
+
+
+  
+    gofrp官网
+  
+  
+    gitlab
+  
+  
+    dowload地址
+  
+
+
+2. 准备
+
+# scp 发送到对应服务器
+sudo scp frp_xxx.tar.gz root@xx.xx.xx.xx:/root/frp
+
+# 解压
+sudo tar -zxvf frp_xxx.tar.gz .
+
+
+3....
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1648294440" data-df="ll">
+  Mar 26, 2022
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Ubuntu
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/interceptor/">Interceptor的使用</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        定义拦截器
+
+@Slf4j
+public class CustomHandlerInterceptor implements HandlerInterceptor {
+
+    @Override
+    public boolean preHandle(@NotNull HttpServletRequest request,
+                             @No...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1647963000" data-df="ll">
+  Mar 22, 2022
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            SpringBoot
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/servelet-filter/">Filter的使用</a>
     </h1>
 
@@ -977,167 +1121,6 @@ su root
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/gitlab/">树莓派搭建GitLab</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        配置及安装
-
-
-  现在一般都使用docker安装了，所以基本上算是不实用了，docker安装更方便
-
-
-树莓派安装gitlab
-
-GitLab-ce
-
-更新依赖
-
-sudo apt-get update
-
-
-安装相关依赖；
-
-sudo apt-get install -y curl openssh-server ca-certificates
-
-
-也是安装相关依赖，这主要是用于GitLab...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1647595620" data-df="ll">
-  Mar 18, 2022
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            RaspberryPi
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/file-permision/">Ubuntu文件权限和归属</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        常见字符
-
-
-  
-    
-      字符
-      含义
-    
-  
-  
-    
-      -
-      普通文件
-    
-    
-      d
-      目录文件
-    
-    
-      l
-      链接文件
-    
-    
-      b
-      块设备文件
-    
-    
-      c
-      字符设备文件
-    
-    
-...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1647594600" data-df="ll">
-  Mar 18, 2022
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Ubuntu
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
 </div> <!-- #post-list -->
 
 
@@ -1354,10 +1337,27 @@ sudo apt-get install -y curl openssh-server ca-certificates
 
   
 
+    
+    
+    
+    
+    
+
+    
+
+    
+      <!-- show number -->
+      <li class="page-item ">
+        <a class="page-link btn-box-shadow" href="/page13">13</a>
+      </li>
+    
+
+  
+
   <!-- mobile pagination -->
   <li class="page-index align-middle">
     <span>11</span>
-    <span class="text-muted">/ 12</span>
+    <span class="text-muted">/ 13</span>
   </li>
 
   <!-- right arrow -->
@@ -1407,6 +1407,16 @@ sudo apt-get install -y curl openssh-server ca-certificates
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -1418,16 +1428,6 @@ sudo apt-get install -y curl openssh-server ca-certificates
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1953,6 +1953,16 @@ sudo apt-get install -y curl openssh-server ca-certificates
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3311,6 +3321,16 @@ sudo apt-get install -y curl openssh-server ca-certificates
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

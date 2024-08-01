@@ -438,6 +438,144 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/sqlite/">SQLite</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        1. 创建数据库
+
+Android提供一个SQLiteOpenHelper抽象类来协助我们使用SQLite，使用时需要继承至SQLiteOpenHelper并实现其中的两个抽象方法onCreate()、onUpgrade()。SQLiteOpenHelper中还有两个非常重要的方法：getWritableDatabase()和getReadableDatabase()。这两个方法都可以创建或...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1701348360" data-df="ll">
+  Nov 30, 2023
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Android
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/mysql/">Mysql命令</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        数据库操作
+
+进入数据库命令行，回车输入密码
+
+mysql -u root -p
+
+数据库相关命令
+
+
+  
+    
+      输入
+      作用
+    
+  
+  
+    
+      show databases
+      数据库列
+    
+    
+      use （数据库）
+      切换数据库
+    
+    
+      show tables
+     ...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1701348120" data-df="ll">
+  Nov 30, 2023
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Other
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/protobuf/">Protobuf的使用</a>
     </h1>
 
@@ -954,139 +1092,6 @@ import ...
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/java-version/">ubuntu java多版本切换</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        java安装
-
-在默认情况下，应该是不带有jdk的，这个时候，我们可以使用apt来下载
-
-apt-get install openjdk-8-jdk openjdk-11-jdk -y
-
-
-当下载多个版本后，默认的java应该就是后下载的那个的版本。
-
-使用update-alternatives切换版本
-
-在/usr/bin目录下
-
-➜  bin ls -al| grep java
-lrwx...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1698395640" data-df="ll">
-  Oct 27, 2023
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Ubuntu
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/python_version/">ubuntu python多版本切换</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        安装
-
-apt-get install python python3 -y
-
-
-默认情况，默认的python是指向python2的，在/usr/bin目录下
-
-➜  bin ls -al| grep python
-lrwxrwxrwx  1 root root           7 4月  15  2020 python -&amp;gt; python2
-lrwxrwxrwx  1 root r...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1698392040" data-df="ll">
-  Oct 27, 2023
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Ubuntu
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
 </div> <!-- #post-list -->
 
 
@@ -1297,9 +1302,24 @@ lrwxrwxrwx  1 root r...
     
 
     
+      <!-- hide number -->
+      
+    
+
+  
+
+    
+    
+    
+    
+    
+
+    
+
+    
       <!-- show number -->
       <li class="page-item ">
-        <a class="page-link btn-box-shadow" href="/page12">12</a>
+        <a class="page-link btn-box-shadow" href="/page13">13</a>
       </li>
     
 
@@ -1308,7 +1328,7 @@ lrwxrwxrwx  1 root r...
   <!-- mobile pagination -->
   <li class="page-index align-middle">
     <span>3</span>
-    <span class="text-muted">/ 12</span>
+    <span class="text-muted">/ 13</span>
   </li>
 
   <!-- right arrow -->
@@ -1358,6 +1378,16 @@ lrwxrwxrwx  1 root r...
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -1369,16 +1399,6 @@ lrwxrwxrwx  1 root r...
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1904,6 +1924,16 @@ lrwxrwxrwx  1 root r...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3262,6 +3292,16 @@ lrwxrwxrwx  1 root r...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

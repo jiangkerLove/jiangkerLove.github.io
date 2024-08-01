@@ -438,6 +438,135 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/room/">Room使用以及原理解析</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        依赖
+
+apply plugin: 'kotlin-kapt'
+implementation "androidx.room:room-runtime:2.3.0"
+kapt "androidx.room:room-compiler:2.3.0"
+
+
+@Entity
+
+
+  用于定义封装实际数据的实体类，每个实体类都会在数据库中对应一张表，并且表中的列是根据实体类中的字段自动生成的。
+
+
+常用...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1654411560" data-df="ll">
+  Jun  5, 2022
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Android
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/livedata/">Livedata使用以及原理解析</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        
+  LiveData 是一种可观察的数据存储器类。与常规的可观察类不同，LiveData 具有生命周期感知能力，意指它遵循其他应用组件（如 Activity、Fragment 或 Service）的生命周期。这种感知能力可确保 LiveData 仅更新处于活跃生命周期状态的应用组件观察者，也会在应用组件销毁时自动取消关联。
+
+
+基础使用
+
+LiveData作为一个支持范型的数据对象，一般是...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex">
+      <div class="mr-auto">
+
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="" data-ts="1654411560" data-df="ll">
+  Jun  5, 2022
+</em>
+
+
+        <!-- categories -->
+        
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          
+            Android
+          </span>
+        
+
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/lifecycle/">Lifecycle使用以及原理解析</a>
     </h1>
 
@@ -964,150 +1093,6 @@ s...
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/frp/">Frp-内网穿透</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        1. 下载安装程序
-
-
-  需区分不同平台
-
-
-
-  
-    gofrp官网
-  
-  
-    gitlab
-  
-  
-    dowload地址
-  
-
-
-2. 准备
-
-# scp 发送到对应服务器
-sudo scp frp_xxx.tar.gz root@xx.xx.xx.xx:/root/frp
-
-# 解压
-sudo tar -zxvf frp_xxx.tar.gz .
-
-
-3....
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1648294440" data-df="ll">
-  Mar 26, 2022
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            Ubuntu
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/interceptor/">Interceptor的使用</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        定义拦截器
-
-@Slf4j
-public class CustomHandlerInterceptor implements HandlerInterceptor {
-
-    @Override
-    public boolean preHandle(@NotNull HttpServletRequest request,
-                             @No...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex">
-      <div class="mr-auto">
-
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="" data-ts="1647963000" data-df="ll">
-  Mar 22, 2022
-</em>
-
-
-        <!-- categories -->
-        
-          <i class="far fa-folder-open fa-fw"></i>
-          <span>
-          
-            SpringBoot
-          </span>
-        
-
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
 </div> <!-- #post-list -->
 
 
@@ -1318,9 +1303,29 @@ public class CustomHandlerInterceptor implements HandlerInterceptor {
     
 
     
+      <!-- hide number -->
+      
+        <li class="page-item disabled">
+          <span class="page-link btn-box-shadow">...</span>
+        </li>
+        
+      
+    
+
+  
+
+    
+    
+    
+    
+    
+
+    
+
+    
       <!-- show number -->
       <li class="page-item ">
-        <a class="page-link btn-box-shadow" href="/page12">12</a>
+        <a class="page-link btn-box-shadow" href="/page13">13</a>
       </li>
     
 
@@ -1329,7 +1334,7 @@ public class CustomHandlerInterceptor implements HandlerInterceptor {
   <!-- mobile pagination -->
   <li class="page-index align-middle">
     <span>10</span>
-    <span class="text-muted">/ 12</span>
+    <span class="text-muted">/ 13</span>
   </li>
 
   <!-- right arrow -->
@@ -1379,6 +1384,16 @@ public class CustomHandlerInterceptor implements HandlerInterceptor {
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -1390,16 +1405,6 @@ public class CustomHandlerInterceptor implements HandlerInterceptor {
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1925,6 +1930,16 @@ public class CustomHandlerInterceptor implements HandlerInterceptor {
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3283,6 +3298,16 @@ public class CustomHandlerInterceptor implements HandlerInterceptor {
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

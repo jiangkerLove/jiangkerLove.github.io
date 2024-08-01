@@ -724,6 +724,16 @@
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -735,16 +745,6 @@
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1270,6 +1270,16 @@
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3555,6 +3565,32 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -3708,69 +3744,6 @@ nas python脚本
       
       
       <div class="card">
-        <a href="/posts/frp/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="small" data-ts="1648294440" data-df="ll">
-  Mar 26, 2022
-</em>
-
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Frp-内网穿透</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                1. 下载安装程序
-
-
-  需区分不同平台
-
-
-
-  
-    gofrp官网
-  
-  
-    gitlab
-  
-  
-    dowload地址
-  
-
-
-2. 准备
-
-1
-2
-3
-4
-5
-# scp 发送到对应服务器
-sudo scp frp_xxx.tar.gz root@xx.xx.xx.xx:/root/frp
-
-# 解压
-sudo tar -zxvf frp_xxx.tar...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
         <a href="/posts/nginx/">
           <div class="card-body">
             <!--
@@ -3818,6 +3791,60 @@ sudo systemctl status nginx
 
 1
 cd /etc/ngin...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/rsync/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="small" data-ts="1648358700" data-df="ll">
+  Mar 27, 2022
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Rsync-文件同步</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                安装
+
+
+  服务器和本地都需要安装的有
+
+
+1
+sudo apt-get install rsync
+
+
+远程同步到本地
+
+1
+2
+3
+4
+5
+# dir文件夹同步到home目录下，即 /home/dir
+sudo rsync -avz root@xxx.xxx.xxx.xxx:/root/dir /home
+
+# dir文件夹里的内容同步到/home/dir目录下，即 /home/dir...
               </p>
             </div>
           </div>
@@ -4421,6 +4448,16 @@ cd /etc/ngin...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

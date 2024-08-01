@@ -802,6 +802,16 @@
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -813,16 +823,6 @@
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1348,6 +1348,16 @@
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3646,6 +3656,32 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -3727,69 +3763,6 @@
   <div id="related-posts" class="mb-2 mb-sm-4">
     <h3 class="pt-2 mb-4 ml-1" data-toc-skip>Further Reading</h3>
     <div class="card-deck mb-4">
-    
-      
-      
-      <div class="card">
-        <a href="/posts/frp/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="small" data-ts="1648294440" data-df="ll">
-  Mar 26, 2022
-</em>
-
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Frp-内网穿透</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                1. 下载安装程序
-
-
-  需区分不同平台
-
-
-
-  
-    gofrp官网
-  
-  
-    gitlab
-  
-  
-    dowload地址
-  
-
-
-2. 准备
-
-1
-2
-3
-4
-5
-# scp 发送到对应服务器
-sudo scp frp_xxx.tar.gz root@xx.xx.xx.xx:/root/frp
-
-# 解压
-sudo tar -zxvf frp_xxx.tar...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
     
       
       
@@ -3895,6 +3868,54 @@ sudo apt-get install rsync
 sudo rsync -avz root@xxx.xxx.xxx.xxx:/root/dir /home
 
 # dir文件夹里的内容同步到/home/dir目录下，即 /home/dir...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/tecent-cloud/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="small" data-ts="1661134260" data-df="ll">
+  Aug 22, 2022
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>腾讯云ubuntu系统设置root登录</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                腾讯云主机，选择ubuntu系统之后，默认登录的用户都是ubuntu用户，如果想直接使用root用户，必须要手动切换，并且不可以直接登录root用户。若想直接使用root账户进行登录，则需要自己进行一些相关配置
+
+首先要确保已有root账户，然后切换到root账户下
+
+1
+su root
+
+
+修改ssh配置
+
+1
+sudo vim /etc/ssh/sshd_config
+
+
+修改Permi...
               </p>
             </div>
           </div>
@@ -4498,6 +4519,16 @@ sudo rsync -avz root@xxx.xxx.xxx.xxx:/root/dir /home
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

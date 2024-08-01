@@ -1393,6 +1393,16 @@ array_name[n]<span class="o">=</span>valuen
         
         
         
+      <li><a href="/posts/open_cv/">OpenCV 图像操作</a></li>
+      
+        
+        
+        
+      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
+      
+        
+        
+        
       <li><a href="/posts/serde_json/">使用serde解析json</a></li>
       
         
@@ -1404,16 +1414,6 @@ array_name[n]<span class="o">=</span>valuen
         
         
       <li><a href="/posts/update_blog/">增加webhooks自动更新blog</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/rustlings/">rustlings 学习和答案</a></li>
-      
-        
-        
-        
-      <li><a href="/posts/anotations/">SpringBoot常用注解</a></li>
       
     </ul>
   </div> <!-- #access-lastmod -->
@@ -1939,6 +1939,16 @@ array_name[n]<span class="o">=</span>valuen
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2771,6 +2781,32 @@ array_name[n]<span class="o">=</span>valuen
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -4330,6 +4366,47 @@ array_name[n]<span class="o">=</span>valuen
       
       
       <div class="card">
+        <a href="/posts/docker_activemq/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em class="small" data-ts="1710212160" data-df="ll">
+  Mar 12, 2024
+</em>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Docker安装ActiveMQ</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                docker 安装
+
+1
+docker run -d --name activemq -p 61616:61616 -p 8161:8161 webcenter/activemq:latest
+
+
+61616端口用于程序调用，8161用于web访问，默认账户密码为admin/admin
+
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
         <a href="/posts/docker_compose/">
           <div class="card-body">
             <!--
@@ -4417,58 +4494,6 @@ vim docker-compose.yml
 粘贴如下内容
 
 vers...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/docker_nginx_proxy_manager/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em class="small" data-ts="1655295120" data-df="ll">
-  Jun 15, 2022
-</em>
-
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Docker Compose安装Nginx Proxy Manager</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                安装
-
-
-  前置条件，已安装docker compose
-
-
-个人习惯会安装到 /root/docker目录下，所以创建并进入对应文件夹
-
-mkdir /root/docker/nginx &amp;amp;&amp;amp; cd /root/docker/nginx
-
-
-创建对应docker compose文文件
-
-vim docker-compose.yml
-
-
-粘贴如下内容
-
-version: "...
               </p>
             </div>
           </div>
@@ -5072,6 +5097,16 @@ version: "...
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
